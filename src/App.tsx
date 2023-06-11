@@ -91,7 +91,7 @@ const App = () => {
         }
       })
       // 将每个砖块转换为圆形
-      bricks.children.iterate((brick) => {
+      bricks.children.iterate((brick: any): any => {
         if (brick.body) {
           brick.body.setCircle(BLOCK_WIDTH / 2)
         }
